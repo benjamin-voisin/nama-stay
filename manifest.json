@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Nama-stay",
+  "version": "0.1",
+ 
+  "description": "Replace deadname with real name",
+ 
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/search?*"],
+      "js": ["protu.js"]
+    }
+  ],
+ 
+  "permissions": [
+    "*://duckduckgo.com/html/*"
+  ]
+}
